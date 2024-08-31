@@ -17,8 +17,8 @@ System.out.println("name:"+name);
 System.out.println("phonenumber:"+phonenumber);
 System.out.println("address:"+address);
 System.out.println("department:"+department);
-System.out.println("age"+age);
-System.out.println("salary"+salary);
+System.out.println("age:"+age);
+System.out.println("salary:"+salary);
 }
 }
 class officer extends employe {
