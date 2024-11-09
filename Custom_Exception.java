@@ -1,26 +1,26 @@
 import java.util.Scanner;
-class AgeException extends Exception{
-    public AgeException(String message){
+class NegativeException extends Exception{
+    public NegativeException(String message){
         super(message);
     }
 }
 public class Custom_Exception{
-    static void Agevalidity(int age) throws AgeException{   
-        if(age<18){
-            throw new AgeException("Age must be above 18 years");
+    static void Numbervalidity(int num) throws NegativeException{   
+        if(num<0){
+            throw new NegativeException("Number must be postive");
         }
-                System.out.println("Age is valid  " +age);
+                System.out.println("Number is valid "  +num);
             }
             
 public static void main(String[] args) {    
     Scanner sc=new Scanner(System.in);
-    System.out.println("Enter yor age:");
-    int age=sc.nextInt();
+    System.out.println("Enter yor Number:");
+    int num=sc.nextInt();
              
  try{
-    Agevalidity(age);
+    Numbervalidity(num);
  } 
- catch(AgeException e){
+ catch(NegativeException e){
     System.out.println("Error:" +e.getMessage());
     sc.close();
  }
